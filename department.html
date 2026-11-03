@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Applications Department</title>
+
+
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    color: #243247;
+    background: #f3f6fb;
+}
+header {
+    background: linear-gradient(135deg, #17365d, #2563a6);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+header h1, header h2 { margin: 4px 0; }
+nav {
+    background: #102744;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+nav a:hover { background: #2d5d91; }
+main {
+    width: min(1000px, calc(100% - 32px));
+    margin: 28px auto;
+}
+section, article, aside, form {
+    background: #fff;
+    padding: 22px;
+    margin: 18px 0;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(22, 48, 79, .06);
+}
+h2, h3 { color: #1d4776; }
+a { color: #2163a5; }
+a:hover { color: #12375e; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+figure { margin: 16px 0; }
+figcaption { color: #5b6878; font-size: .94rem; margin-top: 8px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 18px 0;
+}
+th { background: #1d4776; color: #fff; }
+th, td { border: 1px solid #d6e0ec; padding: 11px; text-align: left; }
+tr:nth-child(even) td { background: #f1f6fc; }
+input, select, textarea {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc9d8;
+    border-radius: 5px;
+    font: inherit;
+}
+input[type="radio"], input[type="checkbox"] { accent-color: #2563a6; }
+input[type="submit"], input[type="reset"], button {
+    background: #1d4776; color: white; border: 0; cursor: pointer;
+    padding: 10px 18px; border-radius: 5px; margin: 5px 6px 5px 0;
+}
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover { background: #2d5d91; }
+hr { border: 0; border-top: 1px solid #dbe3ed; }
+footer {
+    background: #102744; color: #fff; text-align: center;
+    padding: 18px; margin-top: 32px;
+}
+@media (max-width: 650px) {
+    header { padding: 24px 14px; }
+    main { width: calc(100% - 20px); }
+    section, article, aside, form { padding: 16px; }
+    table { font-size: .88rem; }
+    th, td { padding: 7px; }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Department of Computer Applications</h1>
+
+        <p>ABC University</p>
+
+    </header>
+
+
+    <!-- Navigation -->
+    <nav aria-label="Main Navigation">
+
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#faculty">Faculty</a> |
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <nav aria-label="Assignment pages"><a href="index.html">Home</a><a href="frames.html">Department Layout</a><a href="profile.html">Profile</a><a href="registration.html">Registration</a><a href="timetable.html">Timetable</a><a href="imagegallery.html">Gallery</a><a href="character.html">Entities</a></nav>
+    <hr>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section -->
+        <section id="home">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to the Department of Computer Applications.
+                Our department provides education in programming,
+                web development, databases and computer applications.
+            </p>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+
+            <h2>About the Department</h2>
+
+            <article>
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    Our mission is to provide high-quality technical
+                    education and prepare students for careers in
+                    the information technology industry.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- Courses -->
+        <section id="courses">
+
+            <h2>Courses Offered</h2>
+
+            <article>
+
+                <h3>Bachelor of Computer Applications</h3>
+
+                <p>
+                    A three-year undergraduate programme focused on
+                    computer applications and software development.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Master of Computer Applications</h3>
+
+                <p>
+                    A postgraduate programme focused on advanced
+                    computing and software technologies.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- Faculty -->
+        <section id="faculty">
+
+            <h2>Faculty</h2>
+
+            <ul>
+
+                <li>Dr. Rajesh Sharma - Professor</li>
+
+                <li>Dr. Priya Verma - Associate Professor</li>
+
+                <li>Mr. Amit Kumar - Assistant Professor</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Aside -->
+        <aside>
+
+            <h2>Latest Notice</h2>
+
+            <p>
+                Semester examinations will begin from
+                15 December 2026.
+            </p>
+
+        </aside>
+
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                Email:
+                <a href="mailto:computer@abcuniversity.edu">
+                    computer@abcuniversity.edu
+                </a>
+            </p>
+
+            <p>
+                Phone: +91 98765 43210
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <hr>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 ABC University.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

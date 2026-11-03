@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BCA Web Design Assignment</title>
+
+
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    color: #243247;
+    background: #f3f6fb;
+}
+header {
+    background: linear-gradient(135deg, #17365d, #2563a6);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+header h1, header h2 { margin: 4px 0; }
+nav {
+    background: #102744;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+nav a:hover { background: #2d5d91; }
+main {
+    width: min(1000px, calc(100% - 32px));
+    margin: 28px auto;
+}
+section, article, aside, form {
+    background: #fff;
+    padding: 22px;
+    margin: 18px 0;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(22, 48, 79, .06);
+}
+h2, h3 { color: #1d4776; }
+a { color: #2163a5; }
+a:hover { color: #12375e; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+figure { margin: 16px 0; }
+figcaption { color: #5b6878; font-size: .94rem; margin-top: 8px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 18px 0;
+}
+th { background: #1d4776; color: #fff; }
+th, td { border: 1px solid #d6e0ec; padding: 11px; text-align: left; }
+tr:nth-child(even) td { background: #f1f6fc; }
+input, select, textarea {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc9d8;
+    border-radius: 5px;
+    font: inherit;
+}
+input[type="radio"], input[type="checkbox"] { accent-color: #2563a6; }
+input[type="submit"], input[type="reset"], button {
+    background: #1d4776; color: white; border: 0; cursor: pointer;
+    padding: 10px 18px; border-radius: 5px; margin: 5px 6px 5px 0;
+}
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover { background: #2d5d91; }
+hr { border: 0; border-top: 1px solid #dbe3ed; }
+footer {
+    background: #102744; color: #fff; text-align: center;
+    padding: 18px; margin-top: 32px;
+}
+@media (max-width: 650px) {
+    header { padding: 24px 14px; }
+    main { width: calc(100% - 20px); }
+    section, article, aside, form { padding: 16px; }
+    table { font-size: .88rem; }
+    th, td { padding: 7px; }
+}
+</style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>BCA Web Design Assignment</h1>
+
+        <p>HTML and Web Design Practical Pages</p>
+
+    </header>
+
+    <hr>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="department.html">Department</a>
+        <a href="frames.html">Page Layout</a>
+        <a href="profile.html">Student Profile</a>
+        <a href="registration.html">Registration</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="imagegallery.html">Gallery</a>
+        <a href="character.html">Character Entities</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Welcome to the Web Design Assignment</h2>
+            <p>This collection contains HTML practical pages covering page layout, department information, student profiles, registration forms, tables, image galleries and character entities.</p>
+        </section>
+        <section>
+            <h2>Available Pages</h2>
+            <ul>
+                <li><a href="department.html">Department Information</a></li>
+                <li><a href="frames.html">Department Page Layout</a></li>
+                <li><a href="profile.html">Student Profile</a></li>
+                <li><a href="registration.html">Student Registration Form</a></li>
+                <li><a href="timetable.html">BCA Class Timetable</a></li>
+                <li><a href="imagegallery.html">College Event Image Gallery</a></li>
+                <li><a href="character.html">HTML Character Entities</a></li>
+                <li><a href="navigation.html">Navigation Example</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            &copy; 2026 ABC University |
+            Department of Computer Applications
+        </p>
+
+    </footer>
+
+</body>
+</html>

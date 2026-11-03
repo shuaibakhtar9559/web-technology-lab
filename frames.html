@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Department Webpage</title>
+
+    <style>
+
+        /* ------------------------------
+           GENERAL STYLING
+        ------------------------------ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+
+        /* ------------------------------
+           HEADER
+        ------------------------------ */
+
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0 0;
+        }
+
+
+        /* ------------------------------
+           NAVIGATION
+        ------------------------------ */
+
+        nav {
+            background-color: #162b46;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #315b87;
+        }
+
+
+        /* ------------------------------
+           MAIN CSS GRID
+        ------------------------------ */
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr;
+
+            gap: 25px;
+        }
+
+
+        /* ------------------------------
+           MAIN CONTENT
+        ------------------------------ */
+
+        main {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        main h2 {
+            color: #1e3a5f;
+        }
+
+        article {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        article:last-child {
+            border-bottom: none;
+        }
+
+
+        /* ------------------------------
+           ASIDE / SIDEBAR
+        ------------------------------ */
+
+        aside {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            height: fit-content;
+        }
+
+        aside h2 {
+            color: #1e3a5f;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside a {
+            color: #1e3a5f;
+        }
+
+
+        /* ------------------------------
+           BUTTON
+        ------------------------------ */
+
+        .button {
+            display: inline-block;
+            background-color: #1e3a5f;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #315b87;
+        }
+
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        footer {
+            background-color: #162b46;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+
+        /* ------------------------------
+           RESPONSIVE DESIGN
+        ------------------------------ */
+
+        @media (max-width: 768px) {
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+
+            main,
+            aside {
+                padding: 20px;
+            }
+        }
+
+    
+        body { background: #f3f6fb; color: #243247; }
+        section { background: #fff; padding: 20px; border-radius: 8px; }
+        table { border-collapse: collapse; }
+        input, select, textarea { max-width: 100%; }
+        
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>
+            Department of Computer Applications
+        </h1>
+
+        <p>
+            ABC University
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav aria-label="Main Navigation">
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#courses">Courses</a>
+
+        <a href="#faculty">Faculty</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- PAGE CONTENT -->
+
+    <div class="container">
+
+
+        <!-- MAIN CONTENT -->
+
+        <main id="home">
+
+            <section>
+
+                <h2>
+                    Welcome to Our Department
+                </h2>
+
+                <p>
+                    The Department of Computer Applications
+                    provides quality education in programming,
+                    web development, databases, networking and
+                    modern information technology.
+                </p>
+
+                <a href="#courses" class="button">
+                    Explore Courses
+                </a>
+
+            </section>
+
+
+            <!-- ARTICLE 1 -->
+
+            <article id="about">
+
+                <h2>
+                    About the Department
+                </h2>
+
+                <p>
+                    Our department focuses on developing technical
+                    knowledge, analytical thinking and practical
+                    programming skills among students.
+                </p>
+
+                <p>
+                    Students receive both theoretical and practical
+                    exposure through classroom teaching, laboratory
+                    sessions, projects and seminars.
+                </p>
+
+            </article>
+
+
+            <!-- ARTICLE 2 -->
+
+            <article id="courses">
+
+                <h2>
+                    Courses Offered
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Bachelor of Computer Applications (BCA)
+                    </li>
+
+                    <li>
+                        Master of Computer Applications (MCA)
+                    </li>
+
+                    <li>
+                        Diploma in Web Development
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- ARTICLE 3 -->
+
+            <article id="faculty">
+
+                <h2>
+                    Faculty Members
+                </h2>
+
+                <p>
+                    Our experienced faculty members provide
+                    guidance in programming, databases, web
+                    technologies and software development.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Dr. Rajesh Sharma – Professor
+                    </li>
+
+                    <li>
+                        Dr. Priya Verma – Associate Professor
+                    </li>
+
+                    <li>
+                        Mr. Amit Kumar – Assistant Professor
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- ARTICLE 4 -->
+
+            <article id="contact">
+
+                <h2>
+                    Contact Department
+                </h2>
+
+                <p>
+                    Email:
+                    computer@abcuniversity.edu
+                </p>
+
+                <p>
+                    Phone:
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    Address:
+                    ABC University, New Delhi, India
+                </p>
+
+            </article>
+
+        </main>
+
+
+        <!-- SIDEBAR -->
+
+        <aside>
+
+            <h2>
+                Latest Notices
+            </h2>
+
+            <ul>
+
+                <li>
+                    Semester examinations begin
+                    on 15 December.
+                </li>
+
+                <li>
+                    Assignment submission deadline:
+                    10 December.
+                </li>
+
+                <li>
+                    Department seminar on Web Development.
+                </li>
+
+                <li>
+                    Practical examinations will be
+                    conducted next month.
+                </li>
+
+            </ul>
+
+
+            <h2>
+                Quick Links
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="#courses">
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#faculty">
+                        Faculty
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 ABC University
+        </p>
+
+        <p>
+            Department of Computer Applications
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Character Entities</title>
+
+
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    color: #243247;
+    background: #f3f6fb;
+}
+header {
+    background: linear-gradient(135deg, #17365d, #2563a6);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+header h1, header h2 { margin: 4px 0; }
+nav {
+    background: #102744;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+nav a:hover { background: #2d5d91; }
+main {
+    width: min(1000px, calc(100% - 32px));
+    margin: 28px auto;
+}
+section, article, aside, form {
+    background: #fff;
+    padding: 22px;
+    margin: 18px 0;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(22, 48, 79, .06);
+}
+h2, h3 { color: #1d4776; }
+a { color: #2163a5; }
+a:hover { color: #12375e; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+figure { margin: 16px 0; }
+figcaption { color: #5b6878; font-size: .94rem; margin-top: 8px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 18px 0;
+}
+th { background: #1d4776; color: #fff; }
+th, td { border: 1px solid #d6e0ec; padding: 11px; text-align: left; }
+tr:nth-child(even) td { background: #f1f6fc; }
+input, select, textarea {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc9d8;
+    border-radius: 5px;
+    font: inherit;
+}
+input[type="radio"], input[type="checkbox"] { accent-color: #2563a6; }
+input[type="submit"], input[type="reset"], button {
+    background: #1d4776; color: white; border: 0; cursor: pointer;
+    padding: 10px 18px; border-radius: 5px; margin: 5px 6px 5px 0;
+}
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover { background: #2d5d91; }
+hr { border: 0; border-top: 1px solid #dbe3ed; }
+footer {
+    background: #102744; color: #fff; text-align: center;
+    padding: 18px; margin-top: 32px;
+}
+@media (max-width: 650px) {
+    header { padding: 24px 14px; }
+    main { width: calc(100% - 20px); }
+    section, article, aside, form { padding: 16px; }
+    table { font-size: .88rem; }
+    th, td { padding: 7px; }
+}
+</style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>HTML Character Entities</h1>
+
+        <p>
+            Demonstration of special characters and HTML entities.
+        </p>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+
+            <h2>Mathematical Symbols</h2>
+
+            <p>
+                Plus or Minus: &plusmn;
+            </p>
+
+            <p>
+                Less than or equal to: &le;
+            </p>
+
+            <p>
+                Greater than or equal to: &ge;
+            </p>
+
+            <p>
+                Not equal to: &ne;
+            </p>
+
+            <p>
+                Multiplication: &times;
+            </p>
+
+            <p>
+                Division: &divide;
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Currency Symbols</h2>
+
+            <p>
+                Indian Rupee: &#8377;
+            </p>
+
+            <p>
+                Dollar: &dollar;
+            </p>
+
+            <p>
+                Euro: &euro;
+            </p>
+
+            <p>
+                Pound: &pound;
+            </p>
+
+            <p>
+                Yen: &yen;
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Copyright and Trademark</h2>
+
+            <p>
+                Copyright: &copy;
+            </p>
+
+            <p>
+                Registered Trademark: &reg;
+            </p>
+
+            <p>
+                Trademark: &trade;
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Quotation Marks</h2>
+
+            <p>
+                Left quotation mark: &ldquo;
+            </p>
+
+            <p>
+                Right quotation mark: &rdquo;
+            </p>
+
+            <p>
+                Single quotation: &lsquo;Hello&rsquo;
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Angle Brackets</h2>
+
+            <p>
+                Less than symbol: &lt;
+            </p>
+
+            <p>
+                Greater than symbol: &gt;
+            </p>
+
+            <p>
+                Example:
+                &lt;html&gt;
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Other Useful Characters</h2>
+
+            <p>
+                Ampersand: &amp;
+            </p>
+
+            <p>
+                Non-breaking space:
+                Hello&nbsp;World
+            </p>
+
+            <p>
+                Vertical bar: &#124;
+            </p>
+
+            <p>
+                Section symbol: &sect;
+            </p>
+
+            <p>
+                Paragraph symbol: &para;
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Character Entity Table</h2>
+
+            <table border="1"
+                   cellpadding="10"
+                   cellspacing="0">
+
+                <tr>
+                    <th>Character</th>
+                    <th>Entity</th>
+                    <th>Meaning</th>
+                </tr>
+
+                <tr>
+                    <td>&lt;</td>
+                    <td>&amp;lt;</td>
+                    <td>Less than</td>
+                </tr>
+
+                <tr>
+                    <td>&gt;</td>
+                    <td>&amp;gt;</td>
+                    <td>Greater than</td>
+                </tr>
+
+                <tr>
+                    <td>&amp;</td>
+                    <td>&amp;amp;</td>
+                    <td>Ampersand</td>
+                </tr>
+
+                <tr>
+                    <td>&copy;</td>
+                    <td>&amp;copy;</td>
+                    <td>Copyright</td>
+                </tr>
+
+                <tr>
+                    <td>&reg;</td>
+                    <td>&amp;reg;</td>
+                    <td>Registered Trademark</td>
+                </tr>
+
+                <tr>
+                    <td>&trade;</td>
+                    <td>&amp;trade;</td>
+                    <td>Trademark</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&amp;nbsp;</td>
+                    <td>Non-breaking space</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            &copy; 2026 HTML Learning Project
+        </p>
+
+    </footer>
+
+</body>
+</html>

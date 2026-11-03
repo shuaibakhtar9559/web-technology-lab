@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    color: #243247;
+    background: #f3f6fb;
+}
+header {
+    background: linear-gradient(135deg, #17365d, #2563a6);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+header h1, header h2 { margin: 4px 0; }
+nav {
+    background: #102744;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+nav a:hover { background: #2d5d91; }
+main {
+    width: min(1000px, calc(100% - 32px));
+    margin: 28px auto;
+}
+section, article, aside, form {
+    background: #fff;
+    padding: 22px;
+    margin: 18px 0;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(22, 48, 79, .06);
+}
+h2, h3 { color: #1d4776; }
+a { color: #2163a5; }
+a:hover { color: #12375e; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+figure { margin: 16px 0; }
+figcaption { color: #5b6878; font-size: .94rem; margin-top: 8px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 18px 0;
+}
+th { background: #1d4776; color: #fff; }
+th, td { border: 1px solid #d6e0ec; padding: 11px; text-align: left; }
+tr:nth-child(even) td { background: #f1f6fc; }
+input, select, textarea {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc9d8;
+    border-radius: 5px;
+    font: inherit;
+}
+input[type="radio"], input[type="checkbox"] { accent-color: #2563a6; }
+input[type="submit"], input[type="reset"], button {
+    background: #1d4776; color: white; border: 0; cursor: pointer;
+    padding: 10px 18px; border-radius: 5px; margin: 5px 6px 5px 0;
+}
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover { background: #2d5d91; }
+hr { border: 0; border-top: 1px solid #dbe3ed; }
+footer {
+    background: #102744; color: #fff; text-align: center;
+    padding: 18px; margin-top: 32px;
+}
+@media (max-width: 650px) {
+    header { padding: 24px 14px; }
+    main { width: calc(100% - 20px); }
+    section, article, aside, form { padding: 16px; }
+    table { font-size: .88rem; }
+    th, td { padding: 7px; }
+}
+</style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>ABC University</h1>
+        <h2>Student Registration Form</h2>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <form action="#" method="post">
+
+            <!-- Name -->
+            <label for="fullname">
+                Full Name:
+            </label>
+
+            <br>
+
+            <input type="text"
+                   id="fullname"
+                   name="fullname"
+                   placeholder="Enter your full name"
+                   required>
+
+            <br><br>
+
+
+            <!-- Email -->
+            <label for="email">
+                Email Address:
+            </label>
+
+            <br>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="example@email.com"
+                   required>
+
+            <br><br>
+
+
+            <!-- Password -->
+            <label for="password">
+                Password:
+            </label>
+
+            <br>
+
+            <input type="password"
+                   id="password"
+                   name="password"
+                   minlength="8"
+                   required>
+
+            <br><br>
+
+
+            <!-- Gender -->
+            <label>Gender:</label>
+
+            <br>
+
+            <input type="radio"
+                   id="male"
+                   name="gender"
+                   value="male">
+
+            <label for="male">Male</label>
+
+            <br>
+
+            <input type="radio"
+                   id="female"
+                   name="gender"
+                   value="female">
+
+            <label for="female">Female</label>
+
+            <br>
+
+            <input type="radio"
+                   id="other"
+                   name="gender"
+                   value="other">
+
+            <label for="other">Other</label>
+
+            <br><br>
+
+
+            <!-- Course -->
+            <label for="course">
+                Select Course:
+            </label>
+
+            <br>
+
+            <select id="course" name="course" required>
+
+                <option value="">
+                    -- Select Course --
+                </option>
+
+                <option value="bca">
+                    BCA
+                </option>
+
+                <option value="bba">
+                    BBA
+                </option>
+
+                <option value="bcom">
+                    B.Com
+                </option>
+
+                <option value="mba">
+                    MBA
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <!-- DOB -->
+            <label for="dob">
+                Date of Birth:
+            </label>
+
+            <br>
+
+            <input type="date"
+                   id="dob"
+                   name="dob"
+                   required>
+
+            <br><br>
+
+
+            <!-- Hobbies -->
+            <label>
+                Hobbies:
+            </label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="reading"
+                   name="hobby"
+                   value="reading">
+
+            <label for="reading">Reading</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="sports"
+                   name="hobby"
+                   value="sports">
+
+            <label for="sports">Sports</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="music"
+                   name="hobby"
+                   value="music">
+
+            <label for="music">Music</label>
+
+            <br><br>
+
+
+            <!-- Address -->
+            <label for="address">
+                Address:
+            </label>
+
+            <br>
+
+            <textarea id="address"
+                      name="address"
+                      rows="5"
+                      cols="40"
+                      placeholder="Enter your address">
+            </textarea>
+
+            <br><br>
+
+
+            <!-- File Upload -->
+            <label for="document">
+                Upload Document:
+            </label>
+
+            <br>
+
+            <input type="file"
+                   id="document"
+                   name="document"
+                   accept=".pdf,.jpg,.jpeg,.png">
+
+            <br><br>
+
+
+            <!-- Buttons -->
+            <input type="submit"
+                   value="Register">
+
+            <input type="reset"
+                   value="Reset Form">
+
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 ABC University</p>
+    </footer>
+
+</body>
+</html>
